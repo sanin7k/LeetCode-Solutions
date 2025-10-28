@@ -1,13 +1,11 @@
 class Solution {
 public:
   int twoEggDrop(int n) {
-    int a, b = n;
-    for (int i = 0; n > 0; ++i) {
-      a = n;
+    int i;
+    for (i = 0; n > 0; ++i) {
       n -= i;
-      b = n;
     }
-    return a - b;
+    return i - 1;
   }
 };
 
